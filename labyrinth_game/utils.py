@@ -22,6 +22,7 @@ from labyrinth_game.constants import (
     MSG_ITEMS,
     MSG_NO_PUZZLES,
     MSG_PUZZLE_PRESENT,
+    MSG_PUZZLE_SOLVED,
     MSG_SWORD_SCARES,
     MSG_TRAP_DANGER,
     MSG_TRAP_TRIGGERED,
@@ -121,6 +122,7 @@ def solve_puzzle(game_state: dict) -> None:
 
     accepted = _accepted_answers(answers)
     if user_answer in accepted:
+        print(MSG_PUZZLE_SOLVED)
         ROOMS[room]["puzzle"] = None
         _grant_puzzle_reward(game_state, room)
         return
