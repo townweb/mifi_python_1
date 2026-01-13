@@ -34,5 +34,5 @@ make lint
 
 ## Asciinema
 
-Пример полного прохождения (placeholder — замените на свою запись):
-- https://asciinema.org/a/PLACEHOLDER
+Пример полного прохождения:
+- https://asciinema.org/a/GCrTEHxUKJgP1Jxr
